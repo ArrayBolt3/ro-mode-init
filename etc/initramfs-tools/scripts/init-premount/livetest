@@ -1,0 +1,65 @@
+## Copyright (C) 2018 - 2018 ENCRYPTED SUPPORT LP <adrelanos@riseup.net>
+## Copyright (C) 2018 Algernon <33966997+Algernon-01@users.noreply.github.com>
+## See the file COPYING for copying conditions.
+
+#!/bin/sh
+
+set -e
+
+case "${1}" in
+        prereqs)
+                exit 0
+                ;;
+esac
+
+output() {
+   echo "live boot test: $@"
+}
+
+ro_test() {
+   output "Testing for live boot."
+   root_uuid=$(echo "$ROOT" | sed 's/.*=//')
+   root_disk=$(blkid -U "$root_uuid" | sed 's/1//' | sed 's#/dev/##')
+   ro_check=$(cat /sys/block/"$root_disk"/ro)
+
+if [ "$ro_check" = "0" ]; then
+      output "Read-write disk detected. Assuming persistent mode."
+      read_write=true
+   elif [ "$ro_check" = "1" ]; then
+      output "Read-only disk detected. Assuming live mode."
+      read_write=false
+   else
+      output "Write mode detection failed."
+      read_write=error
+   fi
+}
+
+
+live_boot() {
+   echo "root_uuid=\"$root_uuid"\" >> /scripts/local
+   echo "BOOT=live" >> /scripts/local
+   echo 'LIVE_BOOT_CMDLINE="root=/dev/disk/by-uuid/"$root_uuid" boot=live ip=frommedia plainroot union=overlay"' >> /scripts/local
+   output "Proceeding live boot."
+   exit 0
+}
+
+true "Setting fallback read_write=error."
+read_write=error
+
+ro_test
+
+if [ "$read_write" = "error" ]; then
+   output "Contents of /sys/block/<disk>/ro:"
+   cat /sys/block/"$root_disk"/ro
+   ## TODO: Should we exit 0 here or is non-zero more appropriate?
+   output "Proceeding persistent boot."
+   exit 0
+fi
+
+if [ "$read_write" = "false" ]; then
+   live_boot
+fi
+
+output "Proceeding persistent boot."
+
+exit 0

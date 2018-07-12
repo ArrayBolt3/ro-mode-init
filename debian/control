@@ -1,0 +1,22 @@
+## Copyright (C) 2018 - 2018 ENCRYPTED SUPPORT LP <adrelanos@riseup.net>
+## Copyright (C) 2018 Algernon <33966997+Algernon-01@users.noreply.github.com>
+## See the file COPYING for copying conditions.
+
+Source: ro-mode-init
+Section: misc
+Priority: optional
+Maintainer: Patrick Schleizer <adrelanos@riseup.net>
+Build-Depends: debhelper (>= 9), genmkfile
+Homepage: https://github.com/Whonix/ro-mode-init
+Vcs-Browser: https://github.com/Whonix/ro-mode-init
+Vcs-Git: https://github.com/Whonix/ro-mode-init.git
+Standards-Version: 3.9.8
+
+Package: ro-mode-init
+Architecture: all
+Depends: live-boot, live-config-systemd, live-boot-initramfs-tools, live-tools, ${misc:Depends}
+Description: Detects read-only disks and automatically enables live-boot
+ Allows booting the system in live mode. Meaning, no persistent modifications
+ will be written to the disk. All changes stay in RAM.
+ .
+ No claims are made with regard to anti forensics.
