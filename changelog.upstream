@@ -1,3 +1,21 @@
+commit 2f0e5ff37386f0525bad2dd444ffb39e84872cff
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Jul 19 21:48:59 2018 +0800
+
+    indent
+
+commit c94c4820dcc3f04974ff6fb60ccf11b59ffd3dbb
+Author: Algernon <33966997+Algernon-01@users.noreply.github.com>
+Date:   Tue Jul 17 20:49:55 2018 +0000
+
+    adjusted apparmor path + made script executable
+
+commit ab52b1f769159db48ab768c09d49930881c58132
+Author: Algernon <33966997+Algernon-01@users.noreply.github.com>
+Date:   Thu Jul 12 21:19:21 2018 +0000
+
+    Minor fixes.
+
 commit 5322e6c640a94534205444f8eba7af352fbbdedc
 Author: Algernon <33966997+Algernon-01@users.noreply.github.com>
 Date:   Thu Jul 12 12:45:26 2018 +0000
