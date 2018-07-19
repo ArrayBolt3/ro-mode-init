@@ -22,7 +22,7 @@ ro_test() {
    root_disk=$(blkid -U "$root_uuid" | sed 's/1//' | sed 's#/dev/##')
    ro_check=$(cat /sys/block/"$root_disk"/ro)
 
-if [ "$ro_check" = "0" ]; then
+   if [ "$ro_check" = "0" ]; then
       output "Read-write disk detected. Assuming persistent mode."
       read_write=true
    elif [ "$ro_check" = "1" ]; then
