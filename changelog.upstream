@@ -1,3 +1,31 @@
+commit d1b9ec5e7aacede0fc565602a7309b3e0b36b542
+Merge: 86aa356 417f2d1
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Jul 27 21:32:33 2018 +0800
+
+    4Merge remote-tracking branch 'origin/master'
+
+commit 417f2d15d874c6cba55c800dc7555007d3f08185
+Merge: 86aa356 ec2158e
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Jul 27 21:29:31 2018 +0800
+
+    Merge pull request #1 from Algernon-01/master
+    
+    Removed apparmor alias and merged into apparmor-profiles-anondist
+
+commit ec2158e3b66d293e028a94ffe8e5feadda50def9
+Author: Algernon-01 <33966997+Algernon-01@users.noreply.github.com>
+Date:   Fri Jul 27 12:59:18 2018 +0000
+
+    Removed apparmor alias and merged into apparmor-profiles-anondist
+
+commit 86aa3562c43a2f930d819100eb52d9f3b406eaf1
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Jul 19 14:21:05 2018 +0000
+
+    bumped changelog version
+
 commit 2f0e5ff37386f0525bad2dd444ffb39e84872cff
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Thu Jul 19 21:48:59 2018 +0800
