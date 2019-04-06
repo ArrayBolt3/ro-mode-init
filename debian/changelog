@@ -1,3 +1,9 @@
+ro-mode-init (3:0.7-1) unstable; urgency=medium
+
+  * New upstream version (local package).
+
+ -- Patrick Schleizer <adrelanos@riseup.net>  Sat, 06 Apr 2019 12:11:34 +0000
+
 ro-mode-init (3:0.6-1) unstable; urgency=medium
 
   * New upstream version (local package).
