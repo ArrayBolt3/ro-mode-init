@@ -1,3 +1,43 @@
+commit 0c1fecbc85cf7d8dfa7af0d6bb47d0791eb4f9bb
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Jan 21 02:57:48 2020 -0500
+
+    update initramfs
+
+commit 262fb169d4dd30f852848113e7a9cba9bff1eaf1
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Jan 21 02:54:07 2020 -0500
+
+    Provides: boot-live
+
+commit c525d675b561a893c6937981c5f82473c337421d
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Jan 21 02:51:40 2020 -0500
+
+    Provides: live-boot
+
+commit 1d7726bb2d42f9750d8e43bab1e3290a09b25f6b
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Jan 21 02:48:29 2020 -0500
+
+    Replaces: grub-live, grub-default-live
+    
+    to remove grub-live boot menu entry by uninstalling grub-live package
+    
+    when ro-mode-init package is installed
+
+commit 88cdd9ba9a3d7c5dcf5e41c1ab94023b611737d6
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Jan 21 02:47:13 2020 -0500
+
+    Run update-grub to eventual remove grub-live boot menu leftovers.
+
+commit a5bb456697130d7a825371e1f27f9ca4eb36f954
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Aug 1 12:00:25 2019 +0000
+
+    bumped changelog version
+
 commit 52e740d844a2d2973f3a0ad51017b71ec1cd9b66
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Thu Aug 1 11:13:42 2019 +0000
