@@ -15,7 +15,7 @@ Standards-Version: 4.3.0
 Package: ro-mode-init
 Architecture: all
 Provides: boot-live
-Depends: live-boot, live-config-systemd, live-boot-initramfs-tools, live-tools, ${misc:Depends}
+Depends: live-boot, live-boot-initramfs-tools, live-tools, ${misc:Depends}
 Replaces: grub-live, grub-default-live
 Description: Detects read-only disks and automatically enables live-boot
  Allows booting the system in live mode. Meaning, no persistent modifications
