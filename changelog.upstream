@@ -1,3 +1,21 @@
+commit c3442d7e9fc707bdc24982137f342561c67c9dbf
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Jan 24 11:55:20 2020 -0500
+
+    rm_conffile /etc/grub.d/11_linux_live
+
+commit d603d38722ca54a9dae99f31757c0e84a201d223
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Jan 24 11:53:53 2020 -0500
+
+    Conflicts: grub-live, grub-default-live
+
+commit 26751fd344a6aa46ef80c359d2bbf2b75d31e12a
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Jan 21 10:27:03 2020 -0500
+
+    bumped changelog version
+
 commit 4530f22b316cebdd8262979a2958f078b9e4d61e
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Tue Jan 21 10:26:00 2020 -0500
