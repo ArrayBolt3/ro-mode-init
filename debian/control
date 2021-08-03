@@ -6,11 +6,12 @@ Source: ro-mode-init
 Section: misc
 Priority: optional
 Maintainer: Algernon <33966997+Algernon-01@users.noreply.github.com>
-Build-Depends: debhelper (>= 12)
+Build-Depends: debhelper (>= 13), debhelper-compat (= 13)
 Homepage: https://github.com/Whonix/ro-mode-init
 Vcs-Browser: https://github.com/Whonix/ro-mode-init
 Vcs-Git: https://github.com/Whonix/ro-mode-init.git
-Standards-Version: 4.3.0
+Standards-Version: 4.5.1
+Rules-Requires-Root: no
 
 Package: ro-mode-init
 Architecture: all
