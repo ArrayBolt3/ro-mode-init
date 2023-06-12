@@ -1,3 +1,15 @@
+commit 046bf6d682e9ee50e8b68c0a8439dc97a48d1e1a
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Mon Jun 12 16:22:31 2023 +0000
+
+    Standards-Version: 4.6.1.0
+
+commit 4706f7e033d7447763059aa6c101896c196023a9
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Mon Jun 12 15:24:39 2023 +0000
+
+    bumped changelog version
+
 commit f128c3194dfa80fd5e15896859bb5820e6dea82d
 Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Mon Jun 12 14:52:00 2023 +0000
