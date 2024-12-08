@@ -19,9 +19,9 @@ true "INFO: debhelper beginning here."
 
 #DEBHELPER#
 
-## Run update-grub to eventual remove grub-live boot menu leftovers.
+## Run update-grub to remove potential grub-live boot menu leftovers.
 
-## https://phabricator.whonix.org/T377
+## https://forums.whonix.org/t/update-grub-does-get-run-by-grub-packages-during-postinst/19025
 ## Debian has no update-grub trigger yet:
 ## https://bugs.debian.org/481542
 
